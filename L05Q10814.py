@@ -12,6 +12,7 @@ def space(word):
 
 
 user = input("Enter your sentence: ")
+user = user.strip(string.punctuation)
 spaces = space(user)
 words = spaces+1
 user = user.replace(" ", "")
